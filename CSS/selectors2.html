@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+       
+          /* #main p{
+            color: darkblue;}
+            /* inside p{
+            background-color: chartreuse;
+        }
+        /* main > p{
+            background-color: blueviolet;
+
+        }*/
+        /* #main + p{
+            background-color: rgb(255, 10, 149);
+        } */ 
+        /* #main ~ p{
+            background-color: rgb(174, 249, 35);
+        } */
+        
+        a:linkl{
+            color:brown;
+            text-decoration: none;font-size: 20px;
+        }
+        a:hover  {
+            color: beige;font-size: 25px;
+            
+        }
+        a:active {
+            color: chocolate;
+
+        }
+       /* a:visited {
+            color:black;
+        }*/
+        #second .odd{
+            color: cornflowerblue;
+        }
+        #second p:nth-child(even){
+            color:darkgreen
+        }
+        #main p::first-letter{
+            color: crimson;
+        }
+        #main p::first-line{
+            background-color: burlywood;
+            
+        }
+        #main p::after{
+            content: "read more";
+            color: darkolivegreen;
+            font-size: 40px;
+            
+        }
+        img[alt]{
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <!--css combinator-->
+    <div id="main"><!--div first-->
+        <P>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolor adipisci consequuntur asperiores repellendus accusantium, explicabo nihil. Consectetur, facilis dicta. Velit mollitia nobis quis reiciendis culpa quas odio numquam quae.
+        </P>
+
+
+        <div id="inside"><!--inside first-->
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi veniam perspiciatis expedita distinctio quia animi adipisci aperiam hic culpa! Ex eos officia ducimus commodi aliquam doloribus ab recusandae consectetur esse.
+        </p>
+        </div>
+    </div>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit rem laborum eos aliquid? Quidem atque rem animi vel. Voluptate temporibus ex consectetur fugiat minus voluptas impedit nobis at veniam sequi.
+    </p>
+    <a id="main" href="">my youtube channel!</a>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti fuga blanditiis placeat autem facilis sequi. Doloremque dolorem soluta error earum aspernatur id assumenda iusto aliquam labore. Repellendus, totam sed.
+    </p>
+    <div id="second">
+        <p class="odd">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam voluptatum quisquam consectetur debitis est sapiente, voluptatibus impedit, tempora consequuntur iure delectus nisi quae omnis nam rerum. Incidunt eum alias repudiandae.
+
+        </p>
+        <p class="even">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, aliquid fuga mollitia assumenda neque voluptates iste id maiores porro, atque adipisci consequuntur alias beatae explicabo quo illo perspiciatis ducimus unde?
+        </p>
+        <p class="even">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestias soluta, aperiam in quos, asperiores minima aliquid temporibus hic impedit aut, laboriosam eaque sequi esse natus deleniti doloremque cupiditate eveniet.
+        </p>
+        <p class="odd">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis ex ut repudiandae repellat, ea soluta commodi autem adipisci maiores sint nobis quibusdam assumenda quisquam beatae blanditiis, error est eveniet dignissimos!
+        </p>
+    </div>
+    
+</body>
+</html>
