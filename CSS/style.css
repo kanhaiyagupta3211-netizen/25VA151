@@ -1,0 +1,15 @@
+body{
+    background-color: blue;
+    margin:0px;
+    padding:0px;
+}
+p{
+    front-family: arial;
+    front-size: 30px;
+    front-weight: 700px
+    front-style: italic;
+    text-align: centre;
+    text-decoration: capitalize;
+    text-shadow: 1px 1px 10px red;
+    color: pink;
+}
