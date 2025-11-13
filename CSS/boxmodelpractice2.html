@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>boxmodel</title>
+    <style>
+       #main{
+        width:1000px ;
+        height:400px ;
+        background-color: chartreuse;
+        }
+        #left{
+            width:500px ;
+            height:300px ;
+            background-color:blueviolet;
+
+        }
+        #right {
+            width: 500px;
+            height: 100px;
+            background-color: cyan;
+        }
+        #right_box:nth-child(2){
+            margin-top: 200px;
+        }
+    </style>
+
 </head>
 <body>
-    <style>
+    <div id="main">
+        <div id="left"></div>
+        <div id="right"></div>
+        <div class="in"></div>
+        <div class ="in"></div>    
         
-    </style>
+    </div>
+
     
 </body>
 </html>
