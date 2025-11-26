@@ -4,12 +4,21 @@ body{
     padding:0px;
 }
 p{
-    front-family: arial;
+    front-family: 'times new roman',times,serif;
     front-size: 30px;
-    front-weight: 700px
+    front-weight: 400px
     front-style: italic;
-    text-align: centre;
-    text-decoration: capitalize;
+    text-align: justify;
+    text-decoration: underline;
+    text-transform: lowercase;
     text-shadow: 1px 1px 10px red;
     color: pink;
+}
+img{
+    border: 2px solid palevioletred;
+    /* border-radius: 50%; */
+    float: left;
+    margin-right: 20px;
+
+    padding: 3px red;
 }
