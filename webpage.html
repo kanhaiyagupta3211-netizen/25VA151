@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Product Grid webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: rgb(254, 188, 8);
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: darkblue;
+        }
+
+        .product button {
+            background-color: #1026e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product button:hover {
+            background-color: green;
+        }
+
+        @media (max-width: 900px) {
+            .product-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="Logo">
+            <h2>GUPTA TEXTILE</h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Cart</a>
+            <a href="#">Help</a>
+            <a href="#">About</a>
+        </div>
+    </header>
+
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://uspoloassn.in/cdn/shop/files/1_2d9453be-c6c7-4cd0-b807-ded5610cb1a8_500x.jpg?v=1762253741">
+            <h3>Product 1</h3>
+            <span><b>&#8377;999/-</b></span><strike>&#8377; 1299/-</strike>
+            <br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15302976/2021/10/22/142bb8ed-ae7c-4cb9-b04e-419b7c488efe1634900784979-US-Polo-Assn-Men-Shirts-2551634900784310-1.jpg">
+            <h3>Product 2</h3>
+            <span><b>&#8377;1499/-</b></span><strike>&#8377; 1999/-</strike>
+            <br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/21686628/2023/2/6/289a440b-b4af-4664-bf58-b07a0838bc271675666246844-THE-BEAR-HOUSE-Men-Shirts-9541675666246194-1.jpg">
+            <h3>Product 3</h3>
+            <span><b>&#8377;1999/-</b></span><strike>&#8377; 2499/-</strike>
+            <br>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://uspoloassn.in/cdn/shop/files/1_934ff106-7b83-4c33-aacf-29d63acd5e46_500x.jpg?v=1762253741">
+            <h3>Product 4</h3>
+            <span><b>&#8377;999/-</b></span><strike>&#8377; 1299/-</strike>
+            <br>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 GUPTA TEXTILE — All Rights Reserved  
+    </footer>
+
+</body>
+</html>
